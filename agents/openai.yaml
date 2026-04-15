@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文网文写作"
+  short_description: "根据一句简介规划、起稿、续写和改写中文网文"
+  default_prompt: "根据这段目标小说简介，按中文网文逻辑先做选材和故事引擎判断，再给开头、黄金三章、章纲或正文，并默认检索相似范本，避免 AI 味。"
