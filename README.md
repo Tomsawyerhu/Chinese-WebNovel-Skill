@@ -1,5 +1,7 @@
 # Chinese-WebNovel-Skill
 
+> 🔗 [在线试用（无需安装）](https://socialistic.ai/chinese-webnovel-skill-db2a48/?utm_source=github&utm_medium=readme&utm_campaign=0424&utm_content=hyperlink)
+
 这是一个面向中文网文写作的 Codex skill。
 
 它现在的核心不是一份很长的总 prompt，而是一套 `主 skill 路由 + 专项模块下沉 + 本地语料检索` 的模块化设计。
