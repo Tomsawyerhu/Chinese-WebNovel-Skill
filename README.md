@@ -1,6 +1,6 @@
 # Chinese-WebNovel-Skill
 
-> 🔗 [在线试用（无需安装）](https://socialistic.ai/chinese-webnovel-skill-db2a48/?utm_source=github&utm_medium=readme&utm_campaign=0424&utm_content=hyperlink)
+[![在 Socialistic 上试用 Chinese-WebNovel-Skill](https://socialistic.ai/api/embed/chinese-webnovel-skill-db2a48?lang=zh)](https://socialistic.ai/zh/skill/chinese-webnovel-skill-db2a48?utm_source=github&utm_medium=readme&utm_content=badge&utm_campaign=manual_copy)
 
 这是一个面向中文网文写作的 Codex skill。
 
