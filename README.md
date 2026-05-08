@@ -113,6 +113,83 @@
 - `anti_ai_voice` 一般最后介入，避免把结构问题误判成文风问题。
 - 所有链路都可以回查本地语料和模块例库，不是只靠主 prompt 空想。
 
+```mermaid
+flowchart TD
+    %% ===== 前置规划链 =====
+    subgraph A[前置规划链]
+        CP[concept_planning]
+        OP[opening]
+        VO[volume_outline]
+        CP --> OP
+        CP --> VO
+    end
+
+    %% ===== 正文执行链 =====
+    subgraph B[正文执行链]
+        PL[plot_logic]
+        CC[character_consistency]
+        TR[transition]
+        DG[dialogue]
+        CE[chapter_ending]
+        AV[anti_ai_voice]
+
+        PL --> CC
+        CC --> TR
+        TR --> DG
+        DG --> CE
+        CE --> AV
+    end
+
+    %% ===== 完稿收口链 =====
+    subgraph C[完稿收口链]
+        CR[consistency_review]
+    end
+
+    %% ===== 主流程衔接 =====
+    OP --> PL
+    VO --> PL
+    OP --> CC
+    VO --> CC
+    AV --> CR
+
+    %% ===== 能力定位说明 =====
+    PL_NOTE[偏底层：优先解决因果问题]
+    CC_NOTE[偏底层：优先解决人物一致性]
+    TR_NOTE[偏场景/章节执行]
+    DG_NOTE[偏场景/章节执行]
+    CE_NOTE[偏场景/章节执行]
+    AV_NOTE[最后介入：避免把结构问题误判成文风问题]
+
+    PL -.-> PL_NOTE
+    CC -.-> CC_NOTE
+    TR -.-> TR_NOTE
+    DG -.-> DG_NOTE
+    CE -.-> CE_NOTE
+    AV -.-> AV_NOTE
+
+    %% ===== 外部支撑 =====
+    LC[(本地语料)]
+    EX[(模块例库)]
+
+    LC -.回查/检索支持.-> CP
+    LC -.回查/检索支持.-> PL
+    LC -.回查/检索支持.-> CC
+    LC -.回查/检索支持.-> TR
+    LC -.回查/检索支持.-> DG
+    LC -.回查/检索支持.-> CE
+    LC -.回查/检索支持.-> AV
+    LC -.回查/检索支持.-> CR
+
+    EX -.回查/检索支持.-> CP
+    EX -.回查/检索支持.-> PL
+    EX -.回查/检索支持.-> CC
+    EX -.回查/检索支持.-> TR
+    EX -.回查/检索支持.-> DG
+    EX -.回查/检索支持.-> CE
+    EX -.回查/检索支持.-> AV
+    EX -.回查/检索支持.-> CR
+```
+
 ## 素材与语料支撑
 
 这套架构不是只有模块，没有素材库。
