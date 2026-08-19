@@ -304,4 +304,4 @@ python3 scripts/search_corpus_examples.py --keyword '真假千金' --limit 10
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Tomsawyerhu/Chinese-WebNovel-Skill&type=Date)](https://star-history.com/#Tomsawyerhu/Chinese-WebNovel-Skill&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=Tomsawyerhu/Chinese-WebNovel-Skill&type=Date)](https://star-history.dera.page/#Tomsawyerhu/Chinese-WebNovel-Skill&Date)
