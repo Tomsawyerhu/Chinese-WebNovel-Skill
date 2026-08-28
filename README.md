@@ -302,6 +302,3 @@ python3 scripts/search_corpus_examples.py --keyword '真假千金' --limit 10
 
 如果后面继续扩展，优先延续同一种模块骨架，而不是回到单体长文档。
 
-## Star History
-
-[![Star History Chart](https://star-history.dera.page/svg?repos=Tomsawyerhu/Chinese-WebNovel-Skill&type=Date)](https://star-history.dera.page/#Tomsawyerhu/Chinese-WebNovel-Skill&Date)
